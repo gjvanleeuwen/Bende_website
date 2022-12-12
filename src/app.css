@@ -1,0 +1,80 @@
+:root {
+  --mainmain-green: #236441;
+  --main-green: #2caf57;
+  --sub-green: #59d980;
+  --subsub-green: #f9f9e1;
+  --main-blue: #000000;
+  --main-grey: #bbbbb4;
+  --gradient: linear-gradient(90deg, var(--main-green) 0%, var(--sub-green) 100%);
+
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-bgcolor {
+  background-image: var(--gradient);
+}
+.light-color {
+  color: var(--subsub-green) !important;
+}
+.grey-bgcolor {
+  background: var(--main-grey);
+}
+.company_brand {
+  font-size: x-large;
+  font-family: cursive;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section-body {
+  padding: 20px 0;
+}
+
+#app {
+  /*max-width: 1920px;*/
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: var(--subsub-green);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--main-green);
+    background-color: var(--subsub-green);
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: var(--subsub-green);
+  }
+}
